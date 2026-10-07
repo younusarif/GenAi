@@ -11,3 +11,6 @@ print(list(enumerate(letter, start=3)))
 # Start from 5
 for index, l in enumerate(letter, start=5):
     print(index, l)
+
+# covert to map
+print(list(map(str.upper, letter)))
