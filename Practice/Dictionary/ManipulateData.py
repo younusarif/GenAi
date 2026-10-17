@@ -4,7 +4,7 @@ my_dict = {'a': 1, 'b': 2, 'c': 3, 'a': 4} # if duplicate key 'a' is added, it w
 print("Original dictionary:", my_dict)
 
 # indexing and accessing values
-print("Value for key 'a':", my_dict['a']) # accessing value for key 'a'
+print("Value for key 'a'is :", my_dict['a']) # accessing value for key 'a'
 
 # dictionary is not indexed, so we cannot access values using index like a list
 # print(my_dict[0]) # this will raise a KeyError
@@ -27,3 +27,15 @@ if 'b' in my_dict:
 # get all keys and values
 print("All keys in the dictionary:", my_dict.keys()) # returns a view object of all keys
 print("All values in the dictionary:", my_dict.values()) # returns a view object of all values
+
+# remove a key-value pair using pop() method
+removed_value = my_dict.pop('c') # removes the key 'c' and returns its value
+print("Removed value for key 'c':", removed_value)
+print("Dictionary after removing key 'c':", my_dict)    
+
+# Create dictionary using fromkeys() method
+keys = ['x', 'y', 'z'] 
+print("Creating a new dictionary using fromkeys() method with keys:", keys)
+new_dict = dict.fromkeys(keys, 0) # creates a new dictionary with keys from the list and default value 0
+print("New dictionary created using fromkeys():", new_dict)     
+ 
