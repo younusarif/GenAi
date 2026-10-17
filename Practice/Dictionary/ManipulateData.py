@@ -1,12 +1,13 @@
 # Keys are unique, if we try to add a duplicate key, it will overwrite the existing value
 
-my_dict = {'a': 1, 'b': 2, 'c': 3, 'a': 4} # if duplicate key 'a' is added, it will overwrite the value 1 with 4
-print("Original dictionary:", my_dict)
+my_dict = {'a': 1, 'b': 2, 'c': 3, 'a': 4} # if duplicate key 'a' is added, 
+print("Original dictionary:", my_dict) # it will overwrite the value 1 with 4
 
 # indexing and accessing values
 print("Value for key 'a'is :", my_dict['a']) # accessing value for key 'a'
 
-# dictionary is not indexed, so we cannot access values using index like a list
+# dictionary is not indexed, so we cannot access values using index of a value, 
+# we can only access values using keys
 # print(my_dict[0]) # this will raise a KeyError
 
 
@@ -17,7 +18,8 @@ print("Dictionary after adding new key-value pair:", my_dict)
 # if key is not present, it will raise a KeyError
 # print(my_dict['e']) # this will raise a KeyError
 
-# to avoid KeyError, we can use the get() method which returns None if the key is not present
+# to avoid KeyError, we can use the get() method  
+# if the key is not present
 print("Value for key 'e':", my_dict.get('e')) # returns None since key 'e' is not present
 
 # using in operator to check if a key is present in the dictionary
@@ -38,4 +40,4 @@ keys = ['x', 'y', 'z']
 print("Creating a new dictionary using fromkeys() method with keys:", keys)
 new_dict = dict.fromkeys(keys, 0) # creates a new dictionary with keys from the list and default value 0
 print("New dictionary created using fromkeys():", new_dict)     
- 
+
