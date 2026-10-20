@@ -1,11 +1,14 @@
 # Keys are unique, if we try to add a duplicate key, it will overwrite the existing value
 
 my_dict = {'a': 1, 'b': 2, 'c': 3, 'a': 4} # if duplicate key 'a' is added, 
-print("Original dictionary:", my_dict) # it will overwrite the value 1 with 4
+print("Duplicate keys:", my_dict)
+print("Overwrite the value 1 with 4 cos had same key")
 
+print ("=======================================")
+ 
 # indexing and accessing values
-print("Value for key 'a'is :", my_dict['a']) # accessing value for key 'a'
-
+print("Value for key 'a' is :", my_dict['a']) # accessing value for key 'a'
+print ("=======================================")
 # dictionary is not indexed, so we cannot access values using index of a value, 
 # we can only access values using keys
 # print(my_dict[0]) # this will raise a KeyError
