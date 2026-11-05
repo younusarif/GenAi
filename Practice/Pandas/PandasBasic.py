@@ -13,6 +13,16 @@ print("\nLabeled Pandas Series:") # Print a label for the output
 print(labeled_series) # Print the labeled pandas Series
 
 
+# Create a pandas DataFrame from a list
+data_list = [
+    [1, 'Alice', 25], 
+    [2, 'Bob', 30], 
+    [3, 'Charlie', 35], 
+    [4, 'David', 40]] # Create a list of lists
+df_from_list = pd.DataFrame(data_list, columns=['ID', 'Name', 'Age']) # Create a pandas DataFrame from the list of lists
+print("\nPandas DataFrame from list:") # Print a label for the output
+print(df_from_list) # Print the pandas DataFrame from the list of lists 
+
 # Create a pandas DataFrame from a dictionary
 data_dict = {   
     
