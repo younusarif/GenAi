@@ -33,3 +33,4 @@ data_dict = {
 df = pd.DataFrame(data_dict) # Create a pandas DataFrame from the dictionary
 print("\nPandas DataFrame:") # Print a label for the output
 print(df) # Print the pandas DataFrame  
+
