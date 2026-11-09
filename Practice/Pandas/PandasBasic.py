@@ -34,3 +34,19 @@ df = pd.DataFrame(data_dict) # Create a pandas DataFrame from the dictionary
 print("\nPandas DataFrame:") # Print a label for the output
 print(df) # Print the pandas DataFrame  
 
+#locate a specific row in the DataFrame using the index
+row = df.loc[1] # Locate the row with index 1   
+print("\nRow with index 1:") # Print a label for the output
+print(row) # Print the row with index 1
+
+
+# locte & convert a specific row in dictionary to dataframe
+row_dict = df.loc[0] # Locate the row with index 2
+row_df = pd.DataFrame([row_dict]) # Convert the dictionary to a pandas DataFrame
+print("\nRow with index 0 as DataFrame:") # Print a label for the output
+print(row_df) # Print the row with index 2 as a pandas DataFrame
+
+# locate multiple rows in the DataFrame using a list of indices
+rows = df.loc[[0, 2]] # Locate the rows with indices 0 and 2
+print("\nRows with indices 0 and 2:") # Print a label for the output
+print(rows) # Print the rows with indices 0 and 2
