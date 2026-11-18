@@ -7,7 +7,9 @@ data = pd.read_csv(r'E:\Clouds\Microsoft\Younus\OneDrive - MSFT\Portfolio\DataSe
 print(data.head())  # Display the first few rows of the DataFrame
 
 #import data from an csv file using to_string method
-# print(data.to_string())  # Display all rows of the DataFrame as a string
+print(data.to_string())  # Display all rows of the DataFrame as a string
 
 # check system maximum rows display option
 print(pd.options.display.max_rows)  # Display the current maximum number of rows to display 
+
+#import data from a json file
