@@ -12,4 +12,15 @@ print(data.to_string())  # Display all rows of the DataFrame as a string
 # check system maximum rows display option
 print(pd.options.display.max_rows)  # Display the current maximum number of rows to display 
 
-#import data from a json file
+#print information about the DataFrame
+print(data.info())  # Display information about the DataFrame
+
+# read particular rows using indexing
+print(data.iloc[5])  # Display the  5 rows of the DataFrame
+
+#loc vs iloc
+#loc is label based indexing, iloc is integer based indexing
+# read using loc and iloc
+print(data.head(5))  # Display the first 5 rows of the DataFrame
+print(data.loc[5])  # Display the row with index label 5 using loc
+print(data.iloc[5])  # Display the row at integer index 5 using iloc
