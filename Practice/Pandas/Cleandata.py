@@ -14,5 +14,4 @@ dirtydata = originaldata.copy()  # Create a copy of the original DataFrame to wo
 print(dirtydata.isnull().sum())  # Display the count of missing values for each column  
 
 df = dirtydata.dropna()  # Drop rows with missing values
-# print(df)  # Display the cleaned DataFrame after dropping rows with missing values
-print(df.isnull().sum())  # Display the count of missing values for each column after dropping rows with missing values 
+# print(df)  # Display the cleaned DataFrame after dropping rows with missing valuesprint(df.isnull().sum())  # Display the count of missing values for each column after dropping rows with missing values 
