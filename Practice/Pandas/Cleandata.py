@@ -15,3 +15,4 @@ print(dirtydata.isnull().sum())  # Display the count of missing values for each 
 
 df = dirtydata.dropna()  # Drop rows with missing values
 # print(df)  # Display the cleaned DataFrame after dropping rows with missing valuesprint(df.isnull().sum())  # Display the count of missing values for each column after dropping rows with missing values 
+print(df.isna().sum())  # Display the count of missing values for each column after dropping rows with missing values
