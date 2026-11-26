@@ -9,10 +9,19 @@ originaldata = pd.read_csv(r'E:\Clouds\Microsoft\Younus\OneDrive - MSFT\Portfoli
 dirtydata = originaldata.copy()  # Create a copy of the original DataFrame to work with
 # print(dirtydata)  # Display the dirty data
 
-#isnull() method is used to detect missing values in a DataFrame. It returns a DataFrame of the same shape as the original, with True for entries that are NaN (missing) and False for entries that are not NaN.
+#isnull() method is used to detect missing values in a DataFrame. 
+# It returns a DataFrame of the same shape as the original, with True for entries that are NaN (missing) and False for entries that are not NaN.
 # print(dirtydata.isnull())  # Display a DataFrame indicating missing values  
 print(dirtydata.isnull().sum())  # Display the count of missing values for each column  
 
 df = dirtydata.dropna()  # Drop rows with missing values
-# print(df)  # Display the cleaned DataFrame after dropping rows with missing valuesprint(df.isnull().sum())  # Display the count of missing values for each column after dropping rows with missing values 
+# print(df)  # Display the cleaned DataFrame after dropping rows with missing valuesprint(df.isnull().sum())  
+# # Display the count of missing values for each column after dropping rows with missing values 
 print(df.isna().sum())  # Display the count of missing values for each column after dropping rows with missing values
+
+
+#fillna() method is used to fill missing values in a DataFrame. 
+# It can be used to replace NaN values with a specified value or method (like forward fill or backward fill).
+# For example, to fill missing values in the 'price' column with the mean price:
+df['price'] = df['price'].fillna(df['price'].mean())
+# print(df)  # Display the DataFrame after filling missing values in the 'price'
