@@ -25,3 +25,4 @@ print(data.head(5))  # Display the first 5 rows of the DataFrame
 print(data.loc[5])  # Display the row with index label 5 using loc
 print(data.iloc[5])  # Display the row at integer index 5 using iloc
 
+# 

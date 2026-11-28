@@ -28,4 +28,7 @@ loan_data['emp_length_cleared'] = loan_data['emp_length'].str.replace('years', '
 loan_data['emp_length_cleared'] = loan_data['emp_length_cleared'].str.replace('year', '') 
 loan_data['emp_length_cleared'] = loan_data['emp_length_cleared'].str.replace('+', '')
 loan_data['emp_length_cleared'] = loan_data['emp_length_cleared'].str.replace('< 1', '0')
-display(loan_data[['emp_length', 'emp_length_cleared']])  # Display the original and modified columns   
+display(loan_data[['emp_length', 'emp_length_cleared']])  # Display the original and modified columns  
+
+# Get particlar columns from the DataFrame using indexing
+loan_data[['emp_length']]
